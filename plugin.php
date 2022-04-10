@@ -25,8 +25,6 @@ class Plugin {
 	/**
 	 * Instance
 	 *
-	 * Ensures only one instance of the class is loaded or can be loaded.
-	 *
 	 * @since 1.2.0
 	 * @access public
 	 *
@@ -48,7 +46,7 @@ class Plugin {
 	 * @access public
 	 */
 	public function widget_scripts() {
-		wp_register_script( 'elementor-foursquare-church', plugins_url( '/assets/js/foursquare-church.js', __FILE__ ), [ 'jquery' ], false, true );
+		wp_register_script( 'elementor-foursquare-church-addon', plugins_url( '/assets/js/foursquare-church.js', __FILE__ ), [ 'jquery' ], false, true );
 	}
 
 	/**
@@ -63,7 +61,7 @@ class Plugin {
 		add_filter( 'script_loader_tag', [ $this, 'editor_scripts_as_a_module' ], 10, 2 );
 
 		wp_enqueue_script(
-			'elementor-foursquare-church-editor',
+			'elementor-foursquare-church-addon-editor',
 			plugins_url( '/assets/js/editor/editor.js', __FILE__ ),
 			[
 				'elementor-editor',
@@ -84,7 +82,7 @@ class Plugin {
 	 * @return string
 	 */
 	public function editor_scripts_as_a_module( $tag, $handle ) {
-		if ( 'elementor-foursquare-church-editor' === $handle ) {
+		if ( 'elementor-foursquare-church-addon-editor' === $handle ) {
 			$tag = str_replace( '<script', '<script type="module"', $tag );
 		}
 

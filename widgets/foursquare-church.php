@@ -38,7 +38,7 @@ class Foursquare_Church extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Foursquare Church', 'elementor-foursquare-church' );
+		return __( 'Foursquare Church', 'elementor-foursquare-church-addon' );
 	}
 
 	/**
@@ -84,7 +84,7 @@ class Foursquare_Church extends Widget_Base {
 	 * @return array Widget scripts dependencies.
 	 */
 	public function get_script_depends() {
-		return [ 'elementor-foursquare-church' ];
+		return [ 'elementor-foursquare-church-addon' ];
 	}
 
 	/**
@@ -100,14 +100,14 @@ class Foursquare_Church extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => __( 'Content', 'elementor-foursquare-church' ),
+				'label' => __( 'Content', 'elementor-foursquare-church-addon' ),
 			]
 		);
 
 		$this->add_control(
 			'title',
 			[
-				'label' => __( 'Title', 'elementor-foursquare-church' ),
+				'label' => __( 'Title', 'elementor-foursquare-church-addon' ),
 				'type' => Controls_Manager::TEXT,
 			]
 		);
@@ -117,7 +117,7 @@ class Foursquare_Church extends Widget_Base {
 		$this->start_controls_section(
 			'section_style',
 			[
-				'label' => __( 'Style', 'elementor-foursquare-church' ),
+				'label' => __( 'Style', 'elementor-foursquare-church-addon' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -125,14 +125,14 @@ class Foursquare_Church extends Widget_Base {
 		$this->add_control(
 			'text_transform',
 			[
-				'label' => __( 'Text Transform', 'elementor-foursquare-church' ),
+				'label' => __( 'Text Transform', 'elementor-foursquare-church-addon' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => '',
 				'options' => [
-					'' => __( 'None', 'elementor-foursquare-church' ),
-					'uppercase' => __( 'UPPERCASE', 'elementor-foursquare-church' ),
-					'lowercase' => __( 'lowercase', 'elementor-foursquare-church' ),
-					'capitalize' => __( 'Capitalize', 'elementor-foursquare-church' ),
+					'' => __( 'None', 'elementor-foursquare-church-addon' ),
+					'uppercase' => __( 'UPPERCASE', 'elementor-foursquare-church-addon' ),
+					'lowercase' => __( 'lowercase', 'elementor-foursquare-church-addon' ),
+					'capitalize' => __( 'Capitalize', 'elementor-foursquare-church-addon' ),
 				],
 				'selectors' => [
 					'{{WRAPPER}} .title' => 'text-transform: {{VALUE}};',

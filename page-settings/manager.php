@@ -21,7 +21,7 @@ class Page_Settings {
 	 * Register a panel tab slug, in order to allow adding controls to this tab.
 	 */
 	public function add_panel_tab() {
-		Controls_Manager::add_tab( self::PANEL_TAB, __( 'New Tab', 'elementor-foursquare-church' ) );
+		Controls_Manager::add_tab( self::PANEL_TAB, __( 'New Tab', 'elementor-foursquare-church-addon' ) );
 	}
 
 	/**
@@ -39,7 +39,7 @@ class Page_Settings {
 		$document->start_controls_section(
 			'new_section',
 			[
-				'label' => __( 'Settings', 'elementor-foursquare-church' ),
+				'label' => __( 'Settings', 'elementor-foursquare-church-addon' ),
 				'tab' => self::PANEL_TAB,
 			]
 		);
@@ -47,9 +47,9 @@ class Page_Settings {
 		$document->add_control(
 			'text',
 			[
-				'label' => __( 'Title', 'elementor-foursquare-church' ),
+				'label' => __( 'Title', 'elementor-foursquare-church-addon' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Title', 'elementor-foursquare-church' ),
+				'default' => __( 'Title', 'elementor-foursquare-church-addon' ),
 			]
 		);
 

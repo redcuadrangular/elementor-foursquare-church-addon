@@ -13,7 +13,7 @@
  * Author URI:        https://neftaliyagua.com/
  * License:           GPL v2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       elementor-foursquare-church
+ * Text Domain:       elementor-foursquare-church-addon
  * 
  * Elementor tested up to: 3.5.0
  * Elementor Pro tested up to: 3.5.0
@@ -21,17 +21,6 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-/**
- * Main Elementor Foursquare_Church Class
- *
- * The init class that runs the Foursquare Church plugin.
- * Intended To make sure that the plugin's minimum requirements are met.
- *
- * You should only modify the constants to match your plugin's needs.
- *
- * Any custom code should go inside Plugin Class in the plugin.php file.
- * @since 1.2.0
- */
 final class Elementor_Foursquare_Church {
 
 	/**
@@ -121,9 +110,9 @@ final class Elementor_Foursquare_Church {
 
 		$message = sprintf(
 			/* translators: 1: Plugin name 2: Elementor */
-			esc_html__( '"%1$s" requires "%2$s" to be installed and activated.', 'elementor-foursquare-church' ),
-			'<strong>' . esc_html__( 'Elementor Foursquare Church', 'elementor-foursquare-church' ) . '</strong>',
-			'<strong>' . esc_html__( 'Elementor', 'elementor-foursquare-church' ) . '</strong>'
+			esc_html__( '"%1$s" requires "%2$s" to be installed and activated.', 'elementor-foursquare-church-addon' ),
+			'<strong>' . esc_html__( 'Elementor Foursquare Church', 'elementor-foursquare-church-addon' ) . '</strong>',
+			'<strong>' . esc_html__( 'Elementor', 'elementor-foursquare-church-addon' ) . '</strong>'
 		);
 
 		printf( '<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', $message );
@@ -144,9 +133,9 @@ final class Elementor_Foursquare_Church {
 
 		$message = sprintf(
 			/* translators: 1: Plugin name 2: Elementor 3: Required Elementor version */
-			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'elementor-foursquare-church' ),
-			'<strong>' . esc_html__( 'Elementor Foursquare Church', 'elementor-foursquare-church' ) . '</strong>',
-			'<strong>' . esc_html__( 'Elementor', 'elementor-foursquare-church' ) . '</strong>',
+			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'elementor-foursquare-church-addon' ),
+			'<strong>' . esc_html__( 'Elementor Foursquare Church', 'elementor-foursquare-church-addon' ) . '</strong>',
+			'<strong>' . esc_html__( 'Elementor', 'elementor-foursquare-church-addon' ) . '</strong>',
 			self::MINIMUM_ELEMENTOR_VERSION
 		);
 
@@ -168,9 +157,9 @@ final class Elementor_Foursquare_Church {
 
 		$message = sprintf(
 			/* translators: 1: Plugin name 2: PHP 3: Required PHP version */
-			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'elementor-foursquare-church' ),
-			'<strong>' . esc_html__( 'Elementor Foursquare Church', 'elementor-foursquare-church' ) . '</strong>',
-			'<strong>' . esc_html__( 'PHP', 'elementor-foursquare-church' ) . '</strong>',
+			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'elementor-foursquare-church-addon' ),
+			'<strong>' . esc_html__( 'Elementor Foursquare Church', 'elementor-foursquare-church-addon' ) . '</strong>',
+			'<strong>' . esc_html__( 'PHP', 'elementor-foursquare-church-addon' ) . '</strong>',
 			self::MINIMUM_PHP_VERSION
 		);
 

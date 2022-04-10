@@ -34,7 +34,7 @@ class Inline_Editing extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Inline Editing', 'elementor-foursquare-church' );
+		return __( 'Inline Editing', 'elementor-foursquare-church-addon' );
 	}
 
 	/**
@@ -81,34 +81,34 @@ class Inline_Editing extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => __( 'Content', 'elementor-foursquare-church' ),
+				'label' => __( 'Content', 'elementor-foursquare-church-addon' ),
 			]
 		);
 
 		$this->add_control(
 			'title',
 			[
-				'label' => __( 'Title', 'elementor-foursquare-church' ),
+				'label' => __( 'Title', 'elementor-foursquare-church-addon' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Title', 'elementor-foursquare-church' ),
+				'default' => __( 'Title', 'elementor-foursquare-church-addon' ),
 			]
 		);
 
 		$this->add_control(
 			'description',
 			[
-				'label' => __( 'Description', 'elementor-foursquare-church' ),
+				'label' => __( 'Description', 'elementor-foursquare-church-addon' ),
 				'type' => Controls_Manager::TEXTAREA,
-				'default' => __( 'Description', 'elementor-foursquare-church' ),
+				'default' => __( 'Description', 'elementor-foursquare-church-addon' ),
 			]
 		);
 
 		$this->add_control(
 			'content',
 			[
-				'label' => __( 'Content', 'elementor-foursquare-church' ),
+				'label' => __( 'Content', 'elementor-foursquare-church-addon' ),
 				'type' => Controls_Manager::WYSIWYG,
-				'default' => __( 'Content', 'elementor-foursquare-church' ),
+				'default' => __( 'Content', 'elementor-foursquare-church-addon' ),
 			]
 		);
 
